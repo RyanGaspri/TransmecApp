@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjudaTela">
+
+    <TextView
+        android:id="@+id/Texto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="Ajuda em dispositivos IOS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#120403"
+        android:textSize="30dp" />
+
+    <View
+        android:id="@+id/linha"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Texto1"
+        android:layout_marginTop="15dp"
+        android:visibility="visible"
+        android:background="#2E2B2B"
+        />
+
+    <TextView
+        android:id="@+id/Texto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linha"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="1. Acesse as Configurações do seu dispositivo iOS."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#120403"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/Texto3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Texto2"
+        android:fontFamily="serif"
+        android:text="2. Role para baixo e encontre a seção ''Câmera''. Toque nela para abrir as configurações relacionadas à câmera."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#120403"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/Texto4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Texto3"
+        android:fontFamily="serif"
+        android:text="3. Procure a opção ''Leitor de Código QR'' ou ''Leitor de Códigos''. Dependendo da versão do iOS, o nome pode variar."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#120403"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/Texto5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Texto4"
+        android:fontFamily="serif"
+        android:text="4. Verifique se a opção ''Abrir Links está ativada''. Se estiver desativada, ative-a para que os links sejam abertos automaticamente ao escanear um código QR."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#120403"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/Texto6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Texto5"
+        android:fontFamily="serif"
+        android:text="5. Verifique também se a opção ''Mostrar Aviso de Confirmação'' está ativada. Essa opção exibirá uma notificação com um botão para abrir o link ou os dados do código QR."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#120403"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/TextoInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Texto6"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="Atenção !!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#B81926"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextoInfo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/TextoInfo"
+        android:fontFamily="serif"
+        android:text="Em alguns dispositvos iOS , o comportamento padrão ao escanear um código QR é abrir a opção de pesquisa no Google caso o código QR seja um URL."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#120403"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/TextoInfo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextoInfo2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="No entanto voce pode utilizar os aplicativos ''QR Code Reader'' e ''Scanbot'', ambos gratuitos."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#120403"
+        android:textSize="18dp" />
+
+</RelativeLayout>

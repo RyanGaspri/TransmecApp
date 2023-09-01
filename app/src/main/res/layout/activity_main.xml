@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="Coloque as informações abaixo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="20dp"
+            android:hint="Numero do pedido"
+            android:inputType="number"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/EditInfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="Potencia de catalogo"
+            android:inputType="textPostalAddress"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/EditInfo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Potencia especifica"
+            android:inputType="textPostalAddress"
+            android:padding="20dp"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/EditInfo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:inputType="textPostalAddress"
+            android:hint="Fator de serviço"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/EditInfo5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:inputType="textPostalAddress"
+            android:hint="Oleo"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/EditInfo6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:inputType="textPostalAddress"
+            android:hint="volume de oleo"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BotaoGerar"
+                android:layout_width="155dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="45dp"
+                android:text="Gerar QRCode"
+                />
+
+            <Button
+                android:id="@+id/BotaoEscanear"
+                android:layout_width="170dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="60dp"
+                android:paddingHorizontal="13dp"
+                android:text="Escanear um QRCode"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
